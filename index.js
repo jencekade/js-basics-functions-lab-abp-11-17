@@ -14,7 +14,7 @@ function distanceFromHqInFeet(pickupLocation) {
 }
 
 function distanceTravelledInFeet(start, destination) {
-  return calculateVertical();
+  return Math.abs(destination - start) * 264;
 
 }
 
