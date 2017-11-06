@@ -15,10 +15,18 @@ function distanceFromHqInFeet(pickupLocation) {
 
 function distanceTravelledInFeet(start, destination) {
   return Math.abs(destination - start) * 264;
-
 }
 
 function calculatesFarePrice(start, destination) {
-
+  var feet = distanceTravelledInFeet(start, destination);
+  if (feet > 2500) {
+    return 'cannot travel that far';
+  } else if (feet >= 400 && feet < 528) {
+    return feet * 0.02;
+  } else if (feet > 2000) {
+    return 25;
+  } else {
+    return 0;
+  }
 
 }
