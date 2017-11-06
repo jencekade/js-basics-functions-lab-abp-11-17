@@ -13,8 +13,8 @@ function distanceFromHqInFeet(pickupLocation) {
   return distance1;
 }
 
-function distanceTravelledInFeet() {
-
+function distanceTravelledInFeet(start, destination) {
+  return calculateVertical();
 
 }
 
